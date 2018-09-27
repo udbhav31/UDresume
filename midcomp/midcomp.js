@@ -15,6 +15,7 @@ var workexp = (function(){
     $inject = ["databse"];
     var constructor = function(databse){
         this.workArr = databse.workExperience;
+        this.totalexp = databse.totalExp;
     }
     return constructor
 })();

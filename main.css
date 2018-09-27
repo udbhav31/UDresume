@@ -84,8 +84,16 @@ mid-comp .midright {
     padding: 20px;
 
 }
-.edutabval{
-    color: #5B5B5B;
+work-exp .workexptab {
+    display: flex;
+    align-items: baseline;
+}
+work-exp .worktittle{
+    flex-basis: 70%;
+}
+work-exp .workyrs {
+    color: #fc6358;
+    font-size: 15px;
 }
 .content {
     white-space: pre-line;
@@ -133,6 +141,9 @@ tech-exp .rating-title {
     flex-basis: 70%;
     color: #5B5B5B;
 }
+tech-exp .edutabval{
+    color: #5B5B5B;
+}
 .fa {
     padding-left: 4px;
 }
@@ -146,7 +157,9 @@ footer-comp .finishbartxt {
     font-style: italic;
     padding-left: 20px;
     color: rgba(255, 255, 255, 0.8);
+    
 }
+
 /*    color: #244F75;
     color: #60BFBF;
     color: #00bcd4;
