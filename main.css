@@ -6,11 +6,6 @@
     margin-right: auto;
     font-family: Arial, Helvetica, sans-serif;
 }
-
-top-comp .cvdp img {
-    /*border: 2px solid;*/
-    border-radius: 50%;
-}
 top-comp .cvdp_c{
     width: 150px;
     height: 150px;
@@ -66,7 +61,7 @@ mid-comp .midblock {
     display: flex;
 }
 mid-comp .midleft {
-    flex-basis: 65%;
+    flex-basis: 60%;
     color: #5B5B5B;
 }
 mid-comp .midright {
@@ -89,26 +84,15 @@ mid-comp .midright {
     padding: 20px;
 
 }
-work-exp .workexptab {
-    display: flex;
-    align-items: baseline;
-}
-work-exp .worktittle{
-    flex-basis: 70%;
-}
-work-exp .workyrs {
-    color: #fc6358;
-    font-size: 15px;
-}
-work-exp .job-logo{
-    float: right;
+.edutabval{
+    color: #5B5B5B;
 }
 .content {
     white-space: pre-line;
     color: #5B5B5B;
 }
 mid-comp .workcontent{
-    margin: 10px 0px 60px 0px;
+    margin: 10px 0px 69px 0px;
 }
 
 work-exp .job-title {
@@ -126,7 +110,7 @@ work-exp .period {
     font-size: 14px;
     font-style: oblique;
     color: #027878;
-    padding-bottom: 20px;
+    padding-bottom: 10px;
 }
 work-exp .company-title {
     font-size: 17px;
@@ -149,9 +133,6 @@ tech-exp .rating-title {
     flex-basis: 70%;
     color: #5B5B5B;
 }
-tech-exp .edutabval{
-    color: #5B5B5B;
-}
 .fa {
     padding-left: 4px;
 }
@@ -165,18 +146,7 @@ footer-comp .finishbartxt {
     font-style: italic;
     padding-left: 20px;
     color: rgba(255, 255, 255, 0.8);
-    
 }
-@media print {
-    body{
-        margin:0px;
-    }
-    footer-comp .finishbarprint {
-        width: 1000px;
-        position: fixed;
-        bottom: 0px;
-    }
-  }
 /*    color: #244F75;
     color: #60BFBF;
     color: #00bcd4;

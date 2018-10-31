@@ -1,27 +1,18 @@
 
 (()=>{
-    var midcomp = (function(){
-        var constructor = function(databse){
-     
-        }
-        return constructor
-    })();
-    
     angular.module("UDresume").component("midComp", {
-        templateUrl : "midcomp.html",
-        controllerAs: "midcon",
-        controller : midcomp
+        templateUrl : "midcomp.html"
     })
     
     var workexp = (function(){
-        $inject = ["databse"];
-        var constructor = function(databse){
-            this.workArr = databse.workExperience;
-            this.totalexp = databse.totalExp;
+        
+        var constructor = function(db){
+            this.workArr = db.workExperience;
+            this.totalexp = db.totalExp;
         }
         return constructor
     })();
-    
+    workexp.$inject = ["databse"];
     angular.module("UDresume").component("workExp", {
         templateUrl : "workcomp.html",
         controllerAs: "workexpcon",
@@ -29,11 +20,10 @@
     })
     
     var techexp = (function(){
-        $inject = ["databse"];
-        var constructor = function(databse){
-            this.skillsPriArr = databse.skillsPrimary;
-            this.skillsSecArr = databse.skillsSecondary;
-            this.education = databse.education;
+        var constructor = function(db){
+            this.skillsPriArr = db.skillsPrimary;
+            this.skillsSecArr = db.skillsSecondary;
+            this.education = db.education;
         }
         constructor.prototype.genStars = function(stars) {
             const clsArr = [];
@@ -44,6 +34,7 @@
             }
             return clsArr;
         }
+        constructor.$inject = ["databse"];
         return constructor
     })();
     

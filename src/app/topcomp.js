@@ -1,15 +1,16 @@
 
 (()=>{
     var topcomponent = (function(){
-        $inject = ["databse"];
-        var constructor = function(databse){
-            this.name = databse.name;
-            this.mobile = databse.mobile;
-            this.email = databse.email;
-            this.dob = databse.dob;
-            this.loc = databse.location;
-            this.aboutme = databse.aboutme;
+        
+        var constructor = function(db){
+            this.name = db.name;
+            this.mobile = db.mobile;
+            this.email = db.email;
+            this.dob = db.dob;
+            this.loc = db.location;
+            this.aboutme = db.aboutme;
         }
+        constructor.$inject = ["databse"];
         return constructor
     })();
     
