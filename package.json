@@ -1,0 +1,28 @@
+{
+  "name": "udresume",
+  "version": "1.0.0",
+  "description": "resumefile",
+  "main": "main.js",
+  "dependencies": {
+    "gulp-angular-templatecache": "^2.2.5",
+    "gulp-debug": "^4.0.0",
+    "http-server": "^0.12.1",
+    "merge2": "^1.2.3"
+  },
+  "devDependencies": {
+    "gulp": "^3.9.1"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/udbhav31/UDresume.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/udbhav31/UDresume/issues"
+  },
+  "homepage": "https://github.com/udbhav31/UDresume#readme"
+}
